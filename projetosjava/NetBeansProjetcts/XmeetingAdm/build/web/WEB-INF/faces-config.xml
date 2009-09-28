@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="1.2" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+    <application>
+        <view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
+    </application>
+    <navigation-rule>
+        <navigation-case>
+            <from-action>#{IndexManagedBean.DoLogin}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/Participantes.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{ParticipanteManagedBean.doListarInscritos}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/Participantes.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{PapersManagedBean.doListarPapers}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/ListarPapers.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{TrabalhosManagedBean.doListarTrabalhos}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/ListarTrabalhos.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{EstatisticaManagedBean.doEstatistica}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/Estatistica.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{ParticipanteManagedBean.doDetalhes}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/ParticipanteDetalhe.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{ParticipanteManagedBean.doEditar}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/EditarParticipante.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{RelatorioManagedBean.doRelatorioPage}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/admin/Relatorio.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+    <managed-bean>
+        <managed-bean-name>IndexManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.IndexManagedBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>ParticipanteManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.ParticipanteManagedBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>PapersManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.PapersManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>TrabalhosManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.TrabalhosManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>EstatisticaManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.EstatisticaManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>usuarioManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.UsuarioManagedBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>RelatorioManagedBean</managed-bean-name>
+        <managed-bean-class>br.usp.fmrp.managedbean.RelatorioManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+</faces-config>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

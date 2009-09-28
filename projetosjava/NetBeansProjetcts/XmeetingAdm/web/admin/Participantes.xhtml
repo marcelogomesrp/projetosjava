@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich"
+                template="./../template/adminTemplate.xhtml">
+
+
+
+    <ui:define name="content">
+
+     <style  type="text/css">
+        .odd-row {
+            background-color: #ECF3FE;
+        }
+        .even-row {
+            background-color: #FCFFFE;
+        }
+        .active-row {
+            background-color: #FFEBDA;
+        }
+
+    </style>
+
+        <h:form>
+            <rich:panel>
+                <f:facet name="header">
+                    <h:outputText value="Participantes inscritos" />
+                </f:facet>
+            <rich:dataTable  id="memberList" rows="#{ParticipanteManagedBean.tamanhoLista}" value="#{ParticipanteManagedBean.inscritos}" var="member">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nome"/>
+                        </f:facet>
+                        <h:outputText value="#{member.name}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="CPF"/>
+                        </f:facet>
+                        <h:outputText value="#{member.cpf}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Data de Inscrição"/>
+                        </f:facet>
+                        <h:outputText value="#{member.datainsc}"/>
+                    </h:column>
+
+                <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Curso"/>
+                        </f:facet>
+                        <h:outputText value="Nenhum" rendered="#{member.course == 0}"/>
+                        <h:outputText value="Introdução a bioinformática" rendered="#{member.course == 1}"/>
+                        <h:outputText value="Ferramentas da bioinformática" rendered="#{member.course == 2}"/>
+                </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Ocupação"/>
+                        </f:facet>
+                        <h:outputText value="#{member.occupation}"/>
+                    </h:column>
+
+                   <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Membro"/>
+                        </f:facet>
+                        <h:selectBooleanCheckbox value="#{member.ab3cmember == 'yes'}" disabled="true"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Valor da Inscrição"/>
+                        </f:facet>
+                        <h:outputText value="#{member.valorinsc}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Pagou"/>
+                        </f:facet>
+                        <h:selectBooleanCheckbox value="#{member.pagou == 1}" disabled="true"/>
+                    </h:column>
+
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Enviou Paper"/>
+                        </f:facet>
+                        <h:outputText value="#{ParticipanteManagedBean.envioPaper}"/>
+                    </h:column>
+
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Enviou Trabalho"/>
+                        </f:facet>
+                        <h:outputText value="#{ParticipanteManagedBean.envioTrabalho}"/>
+                    </h:column>
+
+                   <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Detalhes"/>
+                        </f:facet>
+                        <h:commandLink value="Ver" action="#{ParticipanteManagedBean.doDetalhes}" />
+                    </h:column>
+
+
+                   <h:column rendered="#{ParticipanteManagedBean.login == 'meire'}">
+                        <f:facet name="header">
+                            <h:outputText value="Confirmar pagamento"/>
+                        </f:facet>
+                         <h:commandLink value="Confirmar" action="#{ParticipanteManagedBean.doEditar}" rendered="#{member.pagou == 0}" />
+                         <h:outputText value="Pago" rendered="#{member.pagou == 1}" />
+                    </h:column>
+
+
+
+
+
+
+            </rich:dataTable>
+            </rich:panel>
+            <rich:jQuery selector="#memberList tr:odd" query="addClass('odd-row')" />
+            <rich:jQuery selector="#memberList tr:even" query="addClass('even-row')" />
+            <rich:jQuery selector="#memberList tr"
+                query="mouseover(function(){jQuery(this).addClass('active-row')})"/>
+            <rich:jQuery selector="#memberList tr"
+                query="mouseout(function(){jQuery(this).removeClass('active-row')})"/>
+
+        </h:form>
+    </ui:define>
+
+
+</ui:composition>

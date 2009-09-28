@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="taz.gomes.br" name="br.com.marcelo.dao.imp.DaoGenericoTest" tests="2" time="1.097" timestamp="2009-08-16T16:11:39">
+  <properties>
+    <property name="javac.test.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:build/classes:/usr/local/netbeans-6.7/platform10/modules/ext/junit-4.5.jar" />
+    <property name="org.openide.TopManager.GUI" value="true" />
+    <property name="libs.theme-default.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme.jar" />
+    <property name="libs.junit.javadoc" value="/usr/local/netbeans-6.7/java2/docs/junit-3.8.2-api.zip" />
+    <property name="libs.rowset-ri.javadoc" value="/home/marcelo/.netbeans/6.7/docs/rowset-doc.zip" />
+    <property name="ant.core.lib" value="/usr/local/netbeans-6.7/java2/ant/lib/ant.jar" />
+    <property name="libs.swing-app-framework.src" value="" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.toplink.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/toplink/toplink-essentials.jar:/usr/local/netbeans-6.7/java2/modules/ext/toplink/toplink-essentials-agent.jar" />
+    <property name="user.dir" value="/data/NetBeansProjects/TesteDaoGenerico" />
+    <property name="libs.theme-default-green.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme-green.jar" />
+    <property name="libs.hibernate-persistence.javadoc" value="" />
+    <property name="java.vm.version" value="14.0-b16" />
+    <property name="libs.jstl11.maven-pom" value="" />
+    <property name="libs.jsf-runtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-impl.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-beanutils.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-collections.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-digester.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-logging.jar" />
+    <property name="libs.commons-fileupload-1.2.1.maven-pom" value="" />
+    <property name="libs.facelets-1.1.14.maven-pom" value="" />
+    <property name="libs.MySQLDriver.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/mysql-connector-java-5.1.6-bin.jar" />
+    <property name="libs.facelets-1-1-14-el-api.maven-pom" value="" />
+    <property name="libs.jstl11.src" value="" />
+    <property name="javadoc.notree" value="false" />
+    <property name="libs.myfaces-core-1.1.7.src" value="" />
+    <property name="libs.hibernate-support.maven-pom" value="" />
+    <property name="libs.hibernate-support.javadoc" value="" />
+    <property name="libs.jaxrpc16.src" value="" />
+    <property name="libs.exceptionhandler-runtime.maven-pom" value="" />
+    <property name="libs.jakarta-taglibs-standard-1.1.2.maven-pom" value="" />
+    <property name="jdk.home" value="/usr/local/jdk1.6.0_14" />
+    <property name="libs.spring-framework-3.0.0.M4.src" value="" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="libs.theme-default-green.runtime" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme-green.jar" />
+    <property name="libs.trinidad-1.0.10.javadoc" value="" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="libs.theme-default-gray.runtime" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme-gray.jar" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.myfaces-core-1.2.7.classpath" value="/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-beanutils-1.7.0.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-codec-1.3.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-collections-3.2.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-digester-1.8.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-discovery-0.4.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-logging-1.1.1.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/myfaces-api-1.2.7.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/myfaces-impl-1.2.7.jar" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="libs.jdbcsupport-runtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/sqlx.jar" />
+    <property name="have.tests" value="true" />
+    <property name="libs.jdbcsupport-designtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/sqlx.jar" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="os.name" value="Linux" />
+    <property name="libs.beans-binding.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/beansbinding-1.2.1.jar" />
+    <property name="libs.jaxrpc16.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/activation.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/FastInfoset.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jaxp-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jax-qname.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jaxrpc-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jaxrpc-impl.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jaxrpc-spi.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/jsr173_api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/mail.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/relaxngDatatype.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/saaj-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/saaj-impl.jar:/home/marcelo/.netbeans/6.7/modules/ext/jaxrpc16/xsdlib.jar" />
+    <property name="libs.dynamicfaces.classpath" value="/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/jsf-extensions-dynamic-faces-0.1.jar:/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/jsf-extensions-common-0.1.jar:/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/shale-remoting.jar:/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/dynamicfaces.jar:/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/commons-logging-1.1.jar" />
+    <property name="libs.myfaces-commons11-1.0.0.maven-pom" value="" />
+    <property name="libs.restapi.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/jsr311-api-doc.zip" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="libs.myfaces-core-1.1.6.src" value="" />
+    <property name="rave.build" value="thresher-fcs" />
+    <property name="libs.trinidad-1.0.10.classpath" value="/home/marcelo/apoio/trinidad-1.0.10/lib/trinidad-api-1.0.10.jar:/home/marcelo/apoio/trinidad-1.0.10/lib/trinidad-impl-1.0.10.jar" />
+    <property name="libs.restapi.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/jsr311-api.jar" />
+    <property name="libs.EclipseLink-GlassFish-v3-Prelude.src" value="" />
+    <property name="libs.commons-logging-1.1.1.maven-pom" value="" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="os.arch" value="amd64" />
+    <property name="user.name" value="marcelo" />
+    <property name="libs.facelets-1-1-14.maven-pom" value="" />
+    <property name="libs.jsf12.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="libs.commons-el-1.0.classpath" value="/home/marcelo/bibliotecas/commons-el-1.0/commons-el.jar" />
+    <property name="manifest.available+main.class" value="true" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="libs.trinidad-1.0.10.src" value="" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="libs.teste.wsimport" value="" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="libs.myfaces-core-1.1.6.classpath" value="/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-beanutils-1.7.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-collections-3.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-digester-1.8.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-el-1.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-lang-2.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/commons-logging-1.1.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/jstl-1.1.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/myfaces-api-1.1.6.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.6/lib/myfaces-impl-1.1.6.jar" />
+    <property name="libs.jaxws21.javadoc" value="/usr/local/netbeans-6.7/java2/docs/jaxws-2_1-api-doc.zip" />
+    <property name="libs.commons-el-1.0.src" value="" />
+    <property name="includes" value="**" />
+    <property name="user.country" value="US" />
+    <property name="manifest.file" value="manifest.mf" />
+    <property name="libs.jstl11.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="javac.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar" />
+    <property name="libs.jsfsupport-designtime.javadoc" value="/home/marcelo/.netbeans/6.7/docs/appbase-doc.zip:/home/marcelo/.netbeans/6.7/docs/dataprovider-doc.zip:/home/marcelo/.netbeans/6.7/docs/jsfcl-doc.zip" />
+    <property name="debug-transport" value="dt_socket" />
+    <property name="netbeans.system_http_non_proxy_hosts" value="" />
+    <property name="netbeans.home" value="/usr/local/netbeans-6.7/platform10" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="libs.spring-framework-3.0.0.M4.classpath" value="/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar" />
+    <property name="libs.rowset-ri.maven-pom" value="" />
+    <property name="libs.ejb3-persistence.src" value="" />
+    <property name="libs.jdbcsupport-runtime.javadoc" value="" />
+    <property name="java.endorsed.dirs" value="/usr/local/jdk1.6.0_14/jre/lib/endorsed" />
+    <property name="netbeans.dynamic.classpath" value="/usr/local/netbeans-6.7/platform10/core/org-openide-filesystems.jar:/usr/local/netbeans-6.7/platform10/core/core.jar:/usr/local/netbeans-6.7/platform10/core/locale/org-openide-filesystems_zh_CN.jar:/usr/local/netbeans-6.7/platform10/core/locale/core_pt_BR.jar:/usr/local/netbeans-6.7/platform10/core/locale/core_zh_CN.jar:/usr/local/netbeans-6.7/platform10/core/locale/org-openide-filesystems_pt_BR.jar:/usr/local/netbeans-6.7/platform10/core/locale/org-openide-filesystems_ja.jar:/usr/local/netbeans-6.7/platform10/core/locale/core_ja.jar:/usr/local/netbeans-6.7/nb6.7/core/org-netbeans-upgrader.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/core_nb_pt_BR.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/org-netbeans-upgrader_ja.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/org-netbeans-upgrader_zh_CN.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/org-netbeans-upgrader_pt_BR.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/core_nb_ja.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/core_nb.jar:/usr/local/netbeans-6.7/nb6.7/core/locale/core_nb_zh_CN.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="org.glassfish.v3.installRoot" value="/usr/local/sges-v3-prelude" />
+    <property name="libs.hibernate-persistence.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="libs.tomahawk-1.1.9.maven-pom" value="" />
+    <property name="libs.jakarta-taglibs-standard-1.1.2.src" value="" />
+    <property name="libs.myfaces-commons11-1.0.0.javadoc" value="" />
+    <property name="libs.swing-app-framework.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/appframework-1.0.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/swing-worker-1.1.jar" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="javac.debug" value="true" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="file.separator" value="/" />
+    <property name="libs.IdentityAntTasks.src" value="" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="netbeans.buildnumber" value="200906241340" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="libs.teste.wsgenerate" value="" />
+    <property name="libs.webui-runtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/webui.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/commons-fileupload-1.0.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="libs.junit.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/junit-3.8.2.jar" />
+    <property name="libs.facelets-1-1-14-myfaces.javadoc" value="" />
+    <property name="libs.jaxb.javadoc" value="" />
+    <property name="libs.struts.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/antlr-2.7.2.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/bsf-2.3.0.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-beanutils-1.7.0.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-chain-1.1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-digester-1.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-fileupload-1.1.1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-io-1.1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-logging-1.0.4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/commons-validator-1.3.1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/jstl-1.0.2.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/oro-2.0.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/standard-1.0.2.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-core-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-el-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-extras-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-faces-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-mailreader-dao-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-scripting-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-taglib-1.3.8.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/struts/struts-tiles-1.3.8.jar" />
+    <property name="libs.woodstock-theme-default.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/webui-jsf-suntheme.jar" />
+    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="false" />
+    <property name="ant.home" value="/usr/local/netbeans-6.7/java2/ant" />
+    <property name="libs.junit_4.src" value="/usr/local/netbeans-6.7/java2/docs/junit-4.5-src.jar" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="java.library.path" value="/usr/local/jdk1.6.0_14/jre/lib/amd64/server:/usr/local/jdk1.6.0_14/jre/lib/amd64:/usr/local/jdk1.6.0_14/jre/../lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib" />
+    <property name="javadoc.author" value="false" />
+    <property name="libs.metro.maven-pom" value="" />
+    <property name="libs.IdentityAntTasks.classpath" value="/usr/local/netbeans-6.7/identity2/ant/nblib/org-netbeans-modules-identity-ant.jar:/usr/local/netbeans-6.7/identity2/modules/org-netbeans-modules-identity-profile-api.jar" />
+    <property name="libs.rich-faces-ui-3.3.1.GA.maven-pom" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="libs.jaxrpc16.javadoc" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="basedir" value="/data/NetBeansProjects/TesteDaoGenerico" />
+    <property name="jar.compress" value="false" />
+    <property name="libs.jstl11.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/standard.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jstl.jar" />
+    <property name="libs.facelets-1-1-14-el-api.javadoc" value="" />
+    <property name="libs.jsf1102.maven-pom" value="" />
+    <property name="path.separator" value=":" />
+    <property name="com.sun.aas.installRoot" value="/usr/local/SUNWappserver" />
+    <property name="libs.myfaces-commons11-1.0.0.src" value="" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.jaxws21.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/activation.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-impl.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-xjc.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jsr173_api.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/FastInfoset.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/http.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/api/jaxws-api.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/jaxws-rt.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/jaxws-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/api/jsr181-api.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/api/jsr250-api.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/mimepull.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/api/saaj-api.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/saaj-impl.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/sjsxp.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/stax-ex.jar:/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/streambuffer.jar" />
+    <property name="libs.struts.src" value="" />
+    <property name="compile.on.save" value="true" />
+    <property name="user.language" value="en" />
+    <property name="libs.spring-framework.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar" />
+    <property name="manifest.available" value="true" />
+    <property name="run.test.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:build/classes:/usr/local/netbeans-6.7/platform10/modules/ext/junit-4.5.jar:build/test/classes" />
+    <property name="useJavaUtilZip" value="true" />
+    <property name="libs.swing-layout.javadoc" value="/usr/local/netbeans-6.7/platform10/docs/swing-layout-1.0.3-doc.zip" />
+    <property name="libs.spring-framework-3.0.0.M4.javadoc" value="" />
+    <property name="libs.commons-io-1.4.classpath" value="/home/marcelo/bibliotecas/commons-io-1.4/commons-io-1.4-javadoc.jar:/home/marcelo/bibliotecas/commons-io-1.4/commons-io-1.4-sources.jar:/home/marcelo/bibliotecas/commons-io-1.4/commons-io-1.4.jar" />
+    <property name="libs.swing-app-framework.javadoc" value="/usr/local/netbeans-6.7/java2/docs/appframework-1.0.3-doc.zip" />
+    <property name="libs.ejb3-persistence.maven-pom" value="" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|taz.gomes.br" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.class.version" value="50.0" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="user.properties.file" value="/home/marcelo/.netbeans/6.7/build.properties" />
+    <property name="libs.dynamicfaces.visual-web-designtime" value="/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/dynamicfaces-dt.jar" />
+    <property name="libs.myfaces-core-1.1.6.javadoc" value="" />
+    <property name="libs.spring-framework.src" value="" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="libs.facelets-1-1-14-myfaces.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/myfaces-all.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/commons-beanutils.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/commons-collections.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/commons-digester.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/commons-el.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/commons-logging.jar" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.myfaces-commons11-1.0.0.classpath" value="/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/commons-beanutils-1.7.0.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/commons-collections-2.1.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/commons-digester-1.6.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/commons-logging-1.0.4.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/commons-validator-1.3.1.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/myfaces-commons-utils11-1.0.0.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/myfaces-converters11-1.0.0.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/myfaces-validators11-1.0.0.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/oro-2.0.8.jar:/home/marcelo/apoio/myfaces-commons11-1.0.0-bin/lib/xml-apis-1.0.b2.jar" />
+    <property name="libs.JWSAntTasks.classpath" value="/usr/local/netbeans-6.7/java2/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="libs.EclipseLink-GlassFish-v3-Prelude.classpath" value="/usr/local/sges-v3-prelude/glassfish/modules/org.eclipse.persistence.oracle.jar:/usr/local/sges-v3-prelude/glassfish/modules/org.eclipse.persistence.asm.jar:/usr/local/sges-v3-prelude/glassfish/modules/org.eclipse.persistence.core.jar:/usr/local/sges-v3-prelude/glassfish/modules/org.eclipse.persistence.jpa.jar:/usr/local/sges-v3-prelude/glassfish/modules/org.eclipse.persistence.antlr.jar:/usr/local/sges-v3-prelude/glassfish/modules/javax.persistence.jar" />
+    <property name="libs.commons-logging-1.1.1.classpath" value="/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-1.1.1-javadoc.jar:/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-1.1.1-sources.jar:/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-1.1.1.jar:/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-adapters-1.1.1.jar:/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-api-1.1.1.jar:/home/marcelo/bibliotecas/commons-logging-1.1.1/commons-logging-tests.jar" />
+    <property name="libs.facelets-1.1.14.javadoc" value="" />
+    <property name="empty.dir" value="/data/NetBeansProjects/TesteDaoGenerico/build/empty" />
+    <property name="libs.jsfsupport-designtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsfcl.jar:/home/marcelo/.netbeans/6.7/modules/ext/appbase.jar:/home/marcelo/.netbeans/6.7/modules/ext/dataprovider.jar:/home/marcelo/.netbeans/6.7/modules/ext/sqlx.jar" />
+    <property name="version-output" value="java version &quot;1.6" />
+    <property name="libs.commons-io-1.4.src" value="" />
+    <property name="javadoc.preview" value="true" />
+    <property name="nbplatform.default.harness.dir" value="/usr/local/netbeans-6.7/harness" />
+    <property name="java.home" value="/usr/local/jdk1.6.0_14/jre" />
+    <property name="libs.spring-webmvc.src" value="" />
+    <property name="libs.Comet-GlassFish-v3-Prelude.classpath" value="/usr/local/sges-v3-prelude/glassfish/modules/grizzly-module.jar" />
+    <property name="debug.test.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:build/classes:/usr/local/netbeans-6.7/platform10/modules/ext/junit-4.5.jar:build/test/classes" />
+    <property name="libs.teste.classpath" value="/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-beanutils-1.7.0.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-codec-1.3.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-collections-3.2.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-digester-1.8.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-discovery-0.4.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/commons-logging-1.1.1.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/myfaces-api-1.2.7.jar:/home/marcelo/myfaces-core-1.2.7-bin/lib/myfaces-impl-1.2.7.jar" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="libs.webui-designtime.src" value="/home/marcelo/.netbeans/6.7/docs/webui-src.zip" />
+    <property name="org.openide.TopManager" value="org.netbeans.core.NonGui" />
+    <property name="libs.toplink.maven-pom" value="" />
+    <property name="libs.teste.wsinterop" value="" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="libs.restlib.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/jersey.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/http.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/wadl2java.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/rome-0.9.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/jdom-1.0.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/jettison-1.0-RC1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/asm-3.1.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/grizzly-servlet-webserver-1.7.3.2.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/rest/jersey-spring.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/activation.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-impl.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-xjc.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="libs.exceptionhandler-runtime.javadoc" value="" />
+    <property name="libs.jsfsupport-runtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsfcl.jar:/home/marcelo/.netbeans/6.7/modules/ext/appbase.jar:/home/marcelo/.netbeans/6.7/modules/ext/dataprovider.jar:/home/marcelo/.netbeans/6.7/modules/ext/sqlx.jar" />
+    <property name="libs.commons-fileupload-1.2.1.src" value="" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|taz.gomes.br" />
+    <property name="org.netbeans.modules.tomcat.autoregister.catalinaHome" value="/usr/local/apache-tomcat-6.0.18" />
+    <property name="libs.junit_4.javadoc" value="/usr/local/netbeans-6.7/java2/docs/junit-4.5-api.zip" />
+    <property name="libs.spring-webmvc.javadoc" value="" />
+    <property name="libs.toplink.src" value="" />
+    <property name="libs.webui.javadoc" value="/home/marcelo/.netbeans/6.7/docs/webui-doc.zip" />
+    <property name="libs.facelets-1-1-14.javadoc" value="" />
+    <property name="libs.teste.wscompile" value="" />
+    <property name="libs.jsf12-support.javadoc" value="/home/marcelo/.netbeans/6.7/docs/appbase-doc.zip:/home/marcelo/.netbeans/6.7/docs/dataprovider-doc.zip:/home/marcelo/.netbeans/6.7/docs/jsfcl-doc.zip" />
+    <property name="run.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:build/classes" />
+    <property name="libs.hibernate-support.src" value="" />
+    <property name="libs.theme-default.runtime" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme.jar" />
+    <property name="libs.rich-faces-ui-3.3.1.GA.javadoc" value="" />
+    <property name="libs.myfaces-core-1.2.7.maven-pom" value="" />
+    <property name="libs.jdbcsupport-runtime.maven-pom" value="" />
+    <property name="libs.restapi.src" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="libs.tomahawk-1.1.9.javadoc" value="" />
+    <property name="libs.Comet-GlassFish-v3-Prelude.javadoc" value="" />
+    <property name="javac.deprecation" value="false" />
+    <property name="javadoc.use" value="true" />
+    <property name="libs.jdbcsupport-runtime.src" value="" />
+    <property name="libs.jdbcsupport-designtime.maven-pom" value="" />
+    <property name="libs.theme-default-gray.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/defaulttheme-gray.jar" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="libs.spring-webmvc.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar" />
+    <property name="javac.compilerargs" value="" />
+    <property name="ant.file" value="/data/NetBeansProjects/TesteDaoGenerico/build.xml" />
+    <property name="libs.jaxrpc16.maven-pom" value="" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="libs.jsf12.classpath" value="/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/commons-beanutils.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/commons-collections.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/commons-digester.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/commons-logging.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/jsf-api.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/jsf-1_2/jsf-impl.jar" />
+    <property name="sun.awt.exception.handler" value="org.netbeans.core.startup.TopLogging$AWTHandler" />
+    <property name="libs.trinidad-1.0.10.maven-pom" value="" />
+    <property name="libs.restapi.maven-pom" value="" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="libs.myfaces-core-1.1.7.maven-pom" value="" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.swing-layout.src" value="/usr/local/netbeans-6.7/platform10/docs/swing-layout-1.0.3-src.zip" />
+    <property name="libs.webui.src" value="/home/marcelo/.netbeans/6.7/docs/webui-src.zip" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="netbeans.user" value="/home/marcelo/.netbeans/6.7" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="libs.commons-el-1.0.maven-pom" value="" />
+    <property name="libs.commons-logging-1.1.1.javadoc" value="" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="jspc.classpath" value="/usr/local/netbeans-6.7/java2/ant/lib/ant.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/servlet2.5-jsp2.1-api.jar:${j2ee.platform.classpath}:/usr/local/netbeans-6.7/enterprise5/modules/ext/glassfish-jspparser-2.0.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/glassfish-logging-2.0.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/ant/lib/ant-launcher.jar" />
+    <property name="libs.myfaces-core-1.1.6.maven-pom" value="" />
+    <property name="sun.boot.library.path" value="/usr/local/jdk1.6.0_14/jre/lib/amd64" />
+    <property name="have.sources" value="true" />
+    <property name="debug.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:build/classes" />
+    <property name="libs.woodstock-theme-default.runtime" value="/home/marcelo/.netbeans/6.7/modules/ext/webui-jsf-suntheme.jar" />
+    <property name="libs.jsf-designtime.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="javadoc.private" value="false" />
+    <property name="test.src.dir" value="test" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="dist.jar" value="dist/TesteDaoGenerico.jar" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.project.name" value="TesteDaoGenerico" />
+    <property name="libs.spring-framework-3.0.0.M4.maven-pom" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3-Prelude.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="libs.jdbcsupport-designtime.javadoc" value="" />
+    <property name="libs.commons-fileupload-1.2.1.classpath" value="/home/marcelo/commons-fileupload-1.2.1/lib/commons-fileupload-1.2.1-javadoc.jar:/home/marcelo/commons-fileupload-1.2.1/lib/commons-fileupload-1.2.1-sources.jar:/home/marcelo/commons-fileupload-1.2.1/lib/commons-fileupload-1.2.1.jar" />
+    <property name="libs.facelets-1.1.14.classpath" value="/home/marcelo/apoio/facelets-1.1.14/jsf-facelets.jar:/home/marcelo/apoio/facelets-1.1.14/lib/el-api-1.0.jar:/home/marcelo/apoio/facelets-1.1.14/lib/el-impl-1.0.jar:/home/marcelo/apoio/facelets-1.1.14/lib/jsf-api-1.2_04-p02.jar:/home/marcelo/apoio/facelets-1.1.14/lib/myfaces-all.jar:/home/marcelo/apoio/facelets-1.1.14/lib/portlet.jar:/home/marcelo/apoio/facelets-1.1.14/lib/servlet-api-2.4.jar" />
+    <property name="libs.Comet-GlassFish-v3-Prelude.src" value="" />
+    <property name="libs.facelets-1-1-14-el-api.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/el-api-1.0.jar" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="libs.hibernate-support.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar" />
+    <property name="libs.commons-fileupload-1.2.1.javadoc" value="" />
+    <property name="user.home" value="/home/marcelo" />
+    <property name="libs.exceptionhandler-runtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/errorhandler.jar" />
+    <property name="libs.jakarta-taglibs-standard-1.1.2.classpath" value="/home/marcelo/apoio/jakarta-taglibs-standard-1.1.2/lib/jstl.jar:/home/marcelo/apoio/jakarta-taglibs-standard-1.1.2/lib/standard.jar" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="libs.jsf-designtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-impl.jar" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="libs.webui.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/webui.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/commons-fileupload-1.0.jar" />
+    <property name="libs.swing-app-framework.maven-pom" value="" />
+    <property name="libs.woodstock-components.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/webui-jsf.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/commons-fileupload-1.0.jar:/home/marcelo/.netbeans/6.7/modules/ext/json-2.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-extensions-common-0.1.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-extensions-dynamic-faces-0.1.jar" />
+    <property name="libs.jakarta-taglibs-standard-1.1.2.javadoc" value="" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.jdbcsupport-designtime.src" value="" />
+    <property name="libs.javac-api.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/javac-api-nb-7.0-b07.jar" />
+    <property name="java.version" value="1.6.0_14" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.jsf12-support.src" value="/home/marcelo/.netbeans/6.7/docs/appbase-src.zip:/home/marcelo/.netbeans/6.7/docs/dataprovider-src.zip:/home/marcelo/.netbeans/6.7/docs/jsfcl-src.zip" />
+    <property name="libs.metro.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/metro-1.4-doc.zip" />
+    <property name="libs.struts.maven-pom" value="" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="libs.IdentityAntTasks.maven-pom" value="" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="work.dir" value="/data/NetBeansProjects/TesteDaoGenerico" />
+    <property name="libs.jaxb.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/activation.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-impl.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/jaxb-xjc.jar:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="libs.jsf1102.src" value="" />
+    <property name="libs.facelets-1-1-14.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/jsf-facelets.jar:/home/marcelo/.netbeans/6.7/modules/ext/facelets-1.1.14/lib/el-impl-1.0.jar" />
+    <property name="do.depend" value="false" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.swing-layout.classpath" value="/usr/local/netbeans-6.7/platform10/modules/ext/swing-layout-1.0.3.jar" />
+    <property name="libs.restlib.src" value="" />
+    <property name="javac.source" value="1.5" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="libs.hibernate-persistence.src" value="" />
+    <property name="line.separator" value="
+" />
+    <property name="libs.rich-faces-ui-3.3.1.GA.src" value="" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.tomahawk-1.1.9.src" value="" />
+    <property name="libs.jsf12-support.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsfcl.jar:/home/marcelo/.netbeans/6.7/modules/ext/appbase.jar:/home/marcelo/.netbeans/6.7/modules/ext/dataprovider.jar:/home/marcelo/.netbeans/6.7/modules/ext/sqlx.jar" />
+    <property name="libs.spring-framework.maven-pom" value="" />
+    <property name="sun.boot.class.path" value="/usr/local/jdk1.6.0_14/jre/lib/resources.jar:/usr/local/jdk1.6.0_14/jre/lib/rt.jar:/usr/local/jdk1.6.0_14/jre/lib/sunrsasign.jar:/usr/local/jdk1.6.0_14/jre/lib/jsse.jar:/usr/local/jdk1.6.0_14/jre/lib/jce.jar:/usr/local/jdk1.6.0_14/jre/lib/charsets.jar:/usr/local/jdk1.6.0_14/jre/classes" />
+    <property name="libs.woodstock-components.javadoc" value="/home/marcelo/.netbeans/6.7/docs/webui-jsf-doc.zip:/home/marcelo/.netbeans/6.7/docs/webui-jsf-tld.zip" />
+    <property name="javac.target" value="1.5" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="libs.jsf1102.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="src.dir" value="src" />
+    <property name="libs.teste.wsjwsdp" value="" />
+    <property name="libs.commons-io-1.4.javadoc" value="" />
+    <property name="libs.commons-io-1.4.maven-pom" value="" />
+    <property name="libs.IdentityAntTasks.javadoc" value="" />
+    <property name="org.netbeans.modules.tomcat.autoregister.token" value="1248091637074" />
+    <property name="libs.commons-el-1.0.javadoc" value="" />
+    <property name="libs.rowset-ri.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/rowset-1.0.1.jar" />
+    <property name="libs.jsf12.src" value="" />
+    <property name="libs.myfaces-core-1.2.7.javadoc" value="" />
+    <property name="nbplatform.default.netbeans.dest.dir" value="/usr/local/netbeans-6.7" />
+    <property name="libs.struts.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/struts-1.3.8-javadoc.zip" />
+    <property name="jspctask.classpath" value="/usr/local/netbeans-6.7/enterprise5/ant/extra/jspcompile.jar" />
+    <property name="libs.webui-designtime.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/webui.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/commons-fileupload-1.0.jar" />
+    <property name="dist.dir" value="dist" />
+    <property name="libs.myfaces-core-1.1.7.javadoc" value="" />
+    <property name="libs.facelets-1-1-14-myfaces.maven-pom" value="" />
+    <property name="libs.facelets-1-1-14-myfaces.src" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="libs.commons-logging-1.1.1.src" value="" />
+    <property name="default.javac.source" value="1.6" />
+    <property name="debug-transport-by-os" value="dt_socket" />
+    <property name="libs.tomahawk-1.1.9.classpath" value="/home/marcelo/apoio/tomahawk-1.1.9/lib/tomahawk-1.1.9.jar" />
+    <property name="libs.EclipseLink-GlassFish-v3-Prelude.maven-pom" value="" />
+    <property name="javac.compilerargs.jaxws" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="libs.teste.javadoc" value="" />
+    <property name="libs.myfaces-core-1.1.7.classpath" value="/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-beanutils-1.7.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-collections-3.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-digester-1.8.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-el-1.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-lang-2.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/commons-logging-1.1.1.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/jstl-1.1.0.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/myfaces-api-1.1.7.jar:/home/marcelo/bibliotecas/myfaces-core-1.1.7/lib/myfaces-impl-1.1.7.jar" />
+    <property name="libs.woodstock-components.src" value="/home/marcelo/.netbeans/6.7/docs/webui-jsf-src.zip" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="java.runtime.version" value="1.6.0_14-b08" />
+    <property name="libs.ejb3-persistence.javadoc" value="" />
+    <property name="jna.platform.library.path" value="/usr/lib64:/lib64" />
+    <property name="manifest.available+main.class+mkdist.available" value="true" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="libs.junit_4.classpath" value="/usr/local/netbeans-6.7/platform10/modules/ext/junit-4.5.jar" />
+    <property name="user.timezone" value="" />
+    <property name="libs.jsfsupport-designtime.src" value="/home/marcelo/.netbeans/6.7/docs/appbase-src.zip:/home/marcelo/.netbeans/6.7/docs/dataprovider-src.zip:/home/marcelo/.netbeans/6.7/docs/jsfcl-src.zip" />
+    <property name="libs.Comet-GlassFish-v3-Prelude.maven-pom" value="" />
+    <property name="netbeans.dirs" value="/usr/local/netbeans-6.7/nb6.7:/usr/local/netbeans-6.7/ergonomics1:/usr/local/netbeans-6.7/ide11:/usr/local/netbeans-6.7/java2:/usr/local/netbeans-6.7/bin/../xml2:/usr/local/netbeans-6.7/apisupport1:/usr/local/netbeans-6.7/webcommon1:/usr/local/netbeans-6.7/websvccommon1:/usr/local/netbeans-6.7/enterprise5:/usr/local/netbeans-6.7/mobility8:/usr/local/netbeans-6.7/profiler3:/usr/local/netbeans-6.7/ruby2:/usr/local/netbeans-6.7/bin/../python1:/usr/local/netbeans-6.7/php1:/usr/local/netbeans-6.7/bin/../visualweb2:/usr/local/netbeans-6.7/bin/../soa2:/usr/local/netbeans-6.7/identity2:/usr/local/netbeans-6.7/bin/../uml6:/usr/local/netbeans-6.7/harness:/usr/local/netbeans-6.7/cnd2:/usr/local/netbeans-6.7/dlight1:/usr/local/netbeans-6.7/groovy1:/usr/local/netbeans-6.7/bin/../extra:/usr/local/netbeans-6.7/bin/../javafx2:" />
+    <property name="ant.file.TesteDaoGenerico" value="/data/NetBeansProjects/TesteDaoGenerico/build.xml" />
+    <property name="libs.exceptionhandler-runtime.src" value="" />
+    <property name="java.ext.dirs" value="/usr/local/jdk1.6.0_14/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="libs.metro.src" value="" />
+    <property name="libs.absolutelayout.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/AbsoluteLayout.jar" />
+    <property name="excludes" value="" />
+    <property name="libs.restlib.maven-pom" value="" />
+    <property name="libs.metro.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/activation.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/metro/webservices-api.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/metro/webservices-extra-api.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/metro/webservices-extra.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/metro/webservices-rt.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/metro/webservices-tools.jar" />
+    <property name="libs.rich-faces-ui-3.3.1.GA.classpath" value="/data/plugins/richfaces-ui-3.3.1.GA/lib/darkX-3.3.1.GA.jar:/data/plugins/richfaces-ui-3.3.1.GA/lib/richfaces-api-3.3.1.GA.jar:/data/plugins/richfaces-ui-3.3.1.GA/lib/richfaces-impl-3.3.1.GA.jar:/data/plugins/richfaces-ui-3.3.1.GA/lib/richfaces-ui-3.3.1.GA.jar" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar:/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar:/usr/local/netbeans-6.7/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7/java2/modules/ext/spring/spring-2.5.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aop-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.asm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.aspects-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.beans-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.context.support-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.core-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.expression-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.instrument.classloading-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.integration-tests-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jdbc-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.jms-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.orm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.oxm-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.test-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.transaction-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.portlet-3.0.0.M4.jar:/home/marcelo/bibliotecas/spring-framework-3.0.0.M4/dist/org.springframework.web.servlet-3.0.0.M4.jar:/usr/local/netbeans-6.7/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:/data/NetBeansProjects/TesteDaoGenerico/build/classes:/usr/local/netbeans-6.7/platform10/modules/ext/junit-4.5.jar:/data/NetBeansProjects/TesteDaoGenerico/build/test/classes:/usr/local/netbeans-6.7/java2/ant/lib/ant-launcher.jar:/usr/local/netbeans-6.7/java2/ant/lib/ant.jar:/usr/local/netbeans-6.7/java2/ant/patches/72080.jar" />
+    <property name="libs.facelets-1-1-14-el-api.src" value="" />
+    <property name="libs.dynamicfaces.javadoc" value="/home/marcelo/.netbeans/6.7/config/org-netbeans-modules-visualweb-complib/installed-complibs/dynamicfaces/dynamicfaces-doc.zip" />
+    <property name="libs.webui-designtime.javadoc" value="/home/marcelo/.netbeans/6.7/docs/webui-doc.zip" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="libs.rowset-ri.src" value="" />
+    <property name="os.version" value="2.6.18-128.2.1.el5" />
+    <property name="application.args" value="" />
+    <property name="libs.jsf1102.classpath" value="/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-beanutils.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-collections.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-digester.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/commons-logging.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-api.jar:/home/marcelo/.netbeans/6.7/modules/ext/jsf-1_1_02/jsf-impl.jar" />
+    <property name="libs.facelets-1-1-14.src" value="" />
+    <property name="libs.toplink.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/javaee5-doc-api.zip" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="libs.facelets-1.1.14.src" value="" />
+    <property name="libs.restlib.javadoc" value="/usr/local/netbeans-6.7/enterprise5/docs/jersey-api-doc.zip" />
+    <property name="libs.beans-binding.javadoc" value="/usr/local/netbeans-6.7/java2/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="rave.version" value="2.0.0" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.CopyLibs.classpath" value="/usr/local/netbeans-6.7/java2/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="libs.teste.src" value="" />
+    <property name="libs.spring-webmvc.maven-pom" value="" />
+    <property name="run.jvmargs" value="" />
+    <property name="jaxws.endorsed.dir" value="/usr/local/netbeans-6.7/java2/modules/ext/jaxws21/api:/usr/local/netbeans-6.7/ide11/modules/ext/jaxb/api" />
+    <property name="libs.ejb3-persistence.classpath" value="/usr/local/netbeans-6.7/java2/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="libs.spring-framework.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="/usr/local/netbeans-6.7/ide11/modules/ext/postgresql-8.3-603.jdbc3.jar" />
+    <property name="libs.myfaces-core-1.2.7.src" value="" />
+    <property name="libs.jsf12.maven-pom" value="" />
+    <property name="libs.junit.src" value="" />
+    <property name="main.class" value="Main" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="build.dir" value="build" />
+    <property name="ant.file.TesteDaoGenerico-impl" value="/data/NetBeansProjects/TesteDaoGenerico/nbproject/build-impl.xml" />
+    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on June 27 2008" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="platform.active" value="default_platform" />
+  </properties>
+  <testcase classname="br.com.marcelo.dao.imp.DaoGenericoTest" name="testSetEntityManager" time="0.878" />
+  <testcase classname="br.com.marcelo.dao.imp.DaoGenericoTest" name="testSalvar" time="0.141" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Aug 16, 2009 1:11:39 PM org.hibernate.cfg.annotations.Version <clinit>
+INFO: Hibernate Annotations 3.3.1.GA
+Aug 16, 2009 1:11:39 PM org.hibernate.cfg.Environment <clinit>
+INFO: Hibernate 3.2.5
+Aug 16, 2009 1:11:39 PM org.hibernate.cfg.Environment <clinit>
+INFO: hibernate.properties not found
+Aug 16, 2009 1:11:39 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+Aug 16, 2009 1:11:39 PM org.hibernate.cfg.Environment <clinit>
+INFO: using JDK 1.4 java.sql.Timestamp handling
+Aug 16, 2009 1:11:40 PM org.hibernate.ejb.Version <clinit>
+INFO: Hibernate EntityManager 3.3.2.GA
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: br.com.marcelo.entities.Pesquisador
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findAll => SELECT p FROM Pesquisador p
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findById => SELECT p FROM Pesquisador p WHERE p.id = :id
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByEmail => SELECT p FROM Pesquisador p WHERE p.email = :email
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByFone => SELECT p FROM Pesquisador p WHERE p.fone = :fone
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByNome => SELECT p FROM Pesquisador p WHERE p.nome = :nome
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findBySenha => SELECT p FROM Pesquisador p WHERE p.senha = :senha
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity br.com.marcelo.entities.Pesquisador on table pesquisador
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Using Hibernate built-in connection pool (not for production use!)
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Hibernate connection pool size: 20
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: autocommit mode: true
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/inctc
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: connection properties: {user=marcelo, password=****, autocommit=true, release_mode=auto}
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: PostgreSQL, version: 8.4.0
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.3 JDBC3 with SSL (build 603)
+Aug 16, 2009 1:11:40 PM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+Aug 16, 2009 1:11:40 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch size: 15
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch updates for versioned data: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Aug 16, 2009 1:11:40 PM org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: br.com.marcelo.entities.Pesquisador
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findAll => SELECT p FROM Pesquisador p
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findById => SELECT p FROM Pesquisador p WHERE p.id = :id
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByEmail => SELECT p FROM Pesquisador p WHERE p.email = :email
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByFone => SELECT p FROM Pesquisador p WHERE p.fone = :fone
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findByNome => SELECT p FROM Pesquisador p WHERE p.nome = :nome
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.QueryBinder bindQuery
+INFO: Binding Named query: Pesquisador.findBySenha => SELECT p FROM Pesquisador p WHERE p.senha = :senha
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity br.com.marcelo.entities.Pesquisador on table pesquisador
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Using Hibernate built-in connection pool (not for production use!)
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Hibernate connection pool size: 20
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: autocommit mode: true
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/inctc
+Aug 16, 2009 1:11:40 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: connection properties: {user=marcelo, password=****, autocommit=true, release_mode=auto}
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: PostgreSQL, version: 8.4.0
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.3 JDBC3 with SSL (build 603)
+Aug 16, 2009 1:11:40 PM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+Aug 16, 2009 1:11:40 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch size: 15
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch updates for versioned data: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Aug 16, 2009 1:11:40 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Aug 16, 2009 1:11:40 PM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Aug 16, 2009 1:11:40 PM org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+]]></system-err>
+</testsuite>

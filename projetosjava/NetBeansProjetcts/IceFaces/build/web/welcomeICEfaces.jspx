@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : IceFaces
+    Created on : Sep 4, 2009, 12:36:32 PM
+    Author     : marcelo
+-->
+<jsp:root version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:ice="http://www.icesoft.com/icefaces/component">
+    <jsp:directive.page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"/>
+    <f:view>
+            <html>
+                <head>
+                    <title>TODO JSP Page</title>
+                </head>
+                <body>
+                    <ice:form id="form1">
+                        <ice:outputText value="Welcome to ICEfaces jspx" />
+                    </ice:form>
+                </body>
+            </html>
+    </f:view>
+</jsp:root>

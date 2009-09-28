@@ -1,0 +1,22 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:ui="http://java.sun.com/jsf/facelets"
+             xmlns:h="http://java.sun.com/jsf/html"
+             xmlns:f="http://java.sun.com/jsf/core"
+             xmlns:a4j="http://richfaces.org/a4j"
+             xmlns:rich="http://richfaces.org/rich">
+    <h:form>
+        <h:panelGrid columns="1" >
+            <h:commandLink id="PrimeiraPaginaLnk" action="#{PrimeirPaginaMB.doPrimeiraPagina}" immediate="true" value="Primeira Pagina" />
+            <h:commandLink id="SegundaPaginaLnk"  action="#{PrimeirPaginaMB.doSegundaPagina}"  immediate="true" value="Segunda Pagina" />
+            <a4j:commandLink reRender="area" submitMode="ajax" action="#{PrimeirPaginaMB.doSegundaPagina}">
+                <h:outputText value="Say Hello" />
+            </a4j:commandLink>
+            <br /><br />
+            <rich:menuItem id="pg1" value="Ajax 1 pagina" submitMode="ajax" reRender="centro2" action="#{PrimeirPaginaMB.doPrimeiraPagina}" />
+            <rich:menuItem id="pg2" value="Ajax 2 pagina" submitMode="ajax" reRender="centro2" action="#{PrimeirPaginaMB.doSegundaPagina}" />
+
+
+        </h:panelGrid>
+    </h:form>
+</ui:fragment>
+

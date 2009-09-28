@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="1.2" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+    <managed-bean>
+        <managed-bean-name>IndexManagedBean</managed-bean-name>
+        <managed-bean-class>managedbean.IndexManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        <managed-property>
+            <property-name>pessoa</property-name>
+            <value>#{PessoaManagedBean}</value>
+        </managed-property>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>ExibeManagedBean</managed-bean-name>
+        <managed-bean-class>managedbean.ExibeManagedBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        <managed-property>
+            <property-name>pessoa</property-name>
+            <value>#{PessoaManagedBean}</value>
+        </managed-property>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>PessoaManagedBean</managed-bean-name>
+        <managed-bean-class>managedbean.PessoaManagedBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <navigation-case>
+            <from-action>#{ExibeManagedBean.DoExibePage}</from-action>
+            <from-outcome>sucesso</from-outcome>
+            <to-view-id>/exibe.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
+
+
+
+
