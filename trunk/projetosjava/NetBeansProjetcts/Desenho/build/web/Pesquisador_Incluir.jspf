@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : Pesquisador_Incluir
+    Created on : Aug 3, 2009, 9:32:24 AM
+    Author     : marcelo
+-->
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:webuijsf="http://www.sun.com/webui/webuijsf">
+    <f:subview id="Pesquisador_Incluir">
+        <div style="height: 70px; left: 96px; top: 0px; position: absolute; width: 478px">
+            <jsp:directive.include file="Menu.jspf"/>
+        </div>
+        <webuijsf:label id="label1" labelLevel="1" style="left: 240px; top: 96px; position: absolute" text="Incluir Arquivo"/>
+        <webuijsf:label for="fileUpload1" id="label2" style="left: 24px; top: 168px; position: absolute" text="Arquivo"/>
+        <webuijsf:upload id="fileUpload1" required="true" style="left: 120px; top: 168px; position: absolute"/>
+        <webuijsf:staticText id="staticText1" style="left: 24px; top: 216px; position: absolute" text="Descrição"/>
+        <webuijsf:textArea columns="60" id="textArea1" required="true" rows="4" style="left: 120px; top: 216px; position: absolute"/>
+        <webuijsf:button id="enviar" style="left: 23px; top: 360px; position: absolute" text="Enviar"/>
+        <webuijsf:button id="button1" style="left: 95px; top: 360px; position: absolute" text="Limpar dados"/>
+        <webuijsf:message for="fileUpload1" id="message1" showDetail="false" showSummary="true" style="left: 552px; top: 168px; position: absolute"/>
+        <webuijsf:message for="textArea1" id="message2" showDetail="false" showSummary="true" style="left: 552px; top: 240px; position: absolute"/>
+    </f:subview>
+</div>

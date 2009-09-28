@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich"
+                template="./../template/adminTemplate.xhtml">
+
+
+
+    <ui:define name="content">
+        <h:form>
+            <rich:panel>
+                <f:facet name="header">
+                    <h:outputText value="Estatística" />
+                </f:facet>
+
+                <h:panelGrid columns="2" >
+
+                    <h:outputLabel  value="Total de inscritos"         for="quantidadeDeParticipanteInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.quantidadeDeParticipante}"  id="quantidadeDeParticipanteInT"    disabled="true" />
+                    <h:outputLabel  value="Total de paper"             for="quantidadeDePaperInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.quantidadeDePaper}"         id="quantidadeDePaperInT"           disabled="true" />
+                    <h:outputLabel  value="Total de trabalho"          for="quantidadeDeTrabalhoInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.quantidadeDeTrabalho}"      id="quantidadeDeTrabalhoInT"        disabled="true" />
+                    <h:outputLabel  value="Valor total das inscrições" for="valorTotalDasinscricoesInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.valorTotal}"               id="valorTotalDasinscricoesInT"      disabled="true" />
+                    <h:outputLabel  value="Valor recebido das inscrições" for="valorRecebidoDasinscricoesInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.valorRecebido}"               id="valorRecebidoDasinscricoesInT"    disabled="true" />
+                    <h:outputLabel  value="Valor a receber das inscrições" for="valorAReceberDasinscricoesInT" />
+                    <h:inputText    value="#{EstatisticaManagedBean.valorTotal - EstatisticaManagedBean.valorRecebido}"               id="valorAReceberDasinscricoesInT"    disabled="true" />
+
+                </h:panelGrid>
+            </rich:panel>
+
+
+        </h:form>
+    </ui:define>
+
+</ui:composition>

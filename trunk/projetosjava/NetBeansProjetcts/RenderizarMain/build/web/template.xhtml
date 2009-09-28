@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Facelets - Template Example</title>
+        <link href="./css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <div id="titulo">
+        <h1>
+            <ui:insert name="title">
+                Teste de Rendereizar
+                <h:outputText value="#{PrimeirPaginaMB.tempo}" />
+
+            </ui:insert>
+        </h1>
+        </div>
+        <div id="corpo">
+        <div id="left">
+                <ui:insert name="left"><ui:include src="./Menu.xhtml"/></ui:insert>
+        </div>
+        <div id="main">
+        <p>
+
+            <ui:insert name="body">
+                <a4j:region id="teste">
+                Default Body
+                </a4j:region>
+                
+            </ui:insert>
+        </p>
+        </div>
+        </div>
+
+        <div id="agora_vai">
+
+
+            <f:subview>
+                    <a4j:outputPanel ajaxRendered="false">
+                        <a4j:include viewId="#{PrimeirPaginaMB.pg}" id="centro"/>
+                    </a4j:outputPanel>
+
+<rich:separator height="6" lineType="solid"/><br/>
+                    <a4j:outputPanel ajaxRendered="false">
+                        <a4j:include viewId="#{PrimeirPaginaMB.pg}" id="centro2"/>
+                    </a4j:outputPanel>
+            </f:subview>
+        </div>
+    </body>
+    
+</html>

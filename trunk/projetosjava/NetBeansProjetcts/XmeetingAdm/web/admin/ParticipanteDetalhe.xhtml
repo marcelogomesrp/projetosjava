@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich"
+                template="./../template/adminTemplate.xhtml">
+
+
+
+    <ui:define name="content">
+
+        <h:form>
+            <rich:panel>
+                <f:facet name="header">
+                    
+                    <h:outputText value="#{ParticipanteManagedBean.participante.name}" id="nameTituloTxt"/>
+                </f:facet>
+                <rich:tabPanel switchType="client">
+                    <rich:tab label="Participante">
+                        <rich:panelBar height="400" width="500">
+                            <rich:panelBarItem label="Pessoal">
+                                <h:panelGrid columns="2" >
+                                    <h:outputLabel for="nameTxt" value="Nome" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.name}" id="nameTxt"/>
+                                    <h:outputLabel for="cpfTxt" value="CPF" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.cpf}" id="cpfTxt"/>
+                                    <h:outputLabel for="rgTxt" value="RG" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.rg}" id="rgTxt"/>
+                                    <h:outputLabel for="nacionalidadeTxt" value="Nacionalidade" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.nationality }" id="nacionalidadeTxt"/>
+                                    <h:outputLabel for="ocupacaoTxt" value="Ocupacao" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.occupation}" id="ocupacaoTxt"/>
+                                    <h:outputLabel for="dataNascimentoTxt" value="Data de nascimento" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.datainsc}" id="dataNascimentoTxt"/>
+                                </h:panelGrid>
+                            </rich:panelBarItem>
+                            <rich:panelBarItem label="Contato">
+                                <h:panelGrid columns="2" >
+                                    <h:outputLabel for="emailTxt" value="Email" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.email}" id="emailTxt"/>
+                                    <h:outputLabel for="foneTxt" value="Fone" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.telephone}" id="foneTxt"/>
+                                    <h:outputLabel for="celularTxt" value="Celular" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.telephone}" id="celularTxt"/>
+                                    <h:outputLabel for="faxTxt" value="Fax" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.fax}" id="faxTxt"/>
+                                </h:panelGrid>
+                            </rich:panelBarItem>
+                            <rich:panelBarItem label="Conta">
+                                <h:panelGrid columns="2" >
+                                    <h:outputLabel for="idTxt" value="Id" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.id}" id="idTxt"/>
+                                    <h:outputLabel for="loginTxt" value="Login" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.login}" id="loginTxt"/>
+                                    <h:outputLabel for="pagouTxt" value="Pagou" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.pagou}" id="pagouTxt"/>
+                                    <h:outputLabel for="dataDoPagamentoTxt" value="Data do Pagamento" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.datapagto}" id="dataDoPagamentoTxt"/>
+                                    <h:outputLabel for="valorDaInscricaoTxt" value="Valor da Inscrição" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.valorinsc}" id="valorDaInscricaoTxt"/>
+                                    <h:outputLabel for="membroTxt" value="Membro" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.ab3cmember}" id="membroTxt"/>
+
+
+                                </h:panelGrid>
+                            </rich:panelBarItem>
+                            <rich:panelBarItem label="Endereço">
+                                <h:panelGrid columns="2" >
+                                    <h:outputLabel for="enderecoTxt" value="Endereco" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.address}" id="enderecoTxt"/>
+                                    <h:outputLabel for="cidadeTxt" value="Cidade" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.city}" id="cidadeTxt"/>
+                                    <h:outputLabel for="estadoTxt" value="Estado" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.state}" id="estadoTxt"/>
+                                    <h:outputLabel for="cepTxt" value="CEP" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.zipcode}" id="cepTxt"/>
+                                    <h:outputLabel for="bairroTxt" value="Bairro" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.neighborhood}" id="bairroTxt"/>
+                                </h:panelGrid>
+                            </rich:panelBarItem>
+
+
+                            <rich:panelBarItem label="Formacao">
+                                <h:panelGrid columns="2" >
+                                    <h:outputLabel for="instituicaoTxt" value="Instituição" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.institution}" id="instituicaoTxt"/>
+                                    <h:outputLabel for="areaTxt" value="Aréa de atuação" />
+                                    <h:outputText value="#{ParticipanteManagedBean.participante.expertise}" id="areaTxt"/>
+                                </h:panelGrid>
+                            </rich:panelBarItem>
+
+
+                        </rich:panelBar>
+                    </rich:tab>
+                    <rich:tab label="Paper">
+
+                        <rich:dataList var="paper" value="#{ParticipanteManagedBean.papers}" rows="#{ParticipanteManagedBean.papersSize}">
+                            <h:outputText value="Status: #{paper.status}"/><br />
+                            <h:outputText value="Nome do Arquivo: #{paper.filename}"/><br /><br />
+                        </rich:dataList>
+
+                    </rich:tab>
+                    <rich:tab label="Trabalho" >
+                        <rich:dataList var="trabalho" value="#{ParticipanteManagedBean.trabalhos}" rows="#{ParticipanteManagedBean.trabalhosSize}">
+                            <h:outputText value="#{trabalho.titulo}"/><br />
+                            <h:outputText value="#{trabalho.resumo}"/><br /><br />
+                        </rich:dataList>
+                    </rich:tab>
+            </rich:tabPanel>
+            </rich:panel>
+            
+        </h:form>
+    </ui:define>
+
+
+</ui:composition>
+
+

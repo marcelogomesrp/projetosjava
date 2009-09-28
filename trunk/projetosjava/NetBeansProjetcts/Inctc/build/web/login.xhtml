@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+
+    <body>
+
+        This text above will not be displayed.
+
+        <ui:composition template="/template.xhtml">
+
+            <ui:define name="body">
+                <f:view>
+                    <a4j:form>
+                        <rich:fileUpload
+                        immediateUpload="true"
+                        addControlLabel="Enviar imagem"
+                        listHeight="50"
+                        fileUploadListener="#{uploadMB.fileUploadListener}" />
+                    </a4j:form>
+                </f:view>
+                <f:view>
+                    <a4j:form>
+
+                        <rich:panel header="Login"  style="width: 315px">
+                            <h:panelGrid columns="3" width="100%">
+                            <h:outputText value="Nome " />
+                            <h:inputText value="" id="nomeTbx">
+                               
+                            </h:inputText>
+                            <h:message for="nomeTbx"/>
+
+                            <h:outputText value="Senha " />
+                            <h:inputText value="" id="senhaTbx">
+                               
+                            </h:inputText>
+                            <h:message for="senhaTbx"/>
+                            <a4j:commandButton value="Entrar" action="sucesso" />
+                            <a4j:commandButton value="Limpar" reRender="greeting" />
+                            </h:panelGrid>
+                        </rich:panel>
+                    </a4j:form>
+                </f:view>
+            </ui:define>
+
+        </ui:composition>
+
+
+    </body>
+</html>
+

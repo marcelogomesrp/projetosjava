@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+
+    <body>
+
+        This text above will not be displayed.
+
+        <ui:composition template="/template.xhtml">
+
+            This text will not be displayed.
+
+            <ui:define name="title">
+                Facelets
+            </ui:define>
+
+            This text will also not be displayed.
+
+            <ui:define name="body">
+                Este
+                <rich:separator height="2" lineType="dotted"/><br/>
+                <rich:fileUpload fileUploadListener="#{FileUploadBean.upload}" addControlLabel="Enviar" clearAllControlLabel="Limpar Todos" clearControlLabel="Limpar" maxFilesQuantity="6" reRender="table2" id="upload" immediateUpload="false" acceptedTypes="jpg, gif, jpeg">
+                    <a4j:support event="onuploadcomplete" reRender="table2" ajaxSingle="true"/>
+                </rich:fileUpload>
+                <rich:separator height="2" lineType="dotted"/><br/>
+            </ui:define>
+
+            This text will not be displayed.
+
+        </ui:composition>
+
+        This text below will also not be displayed.
+
+    </body>
+</html>
+

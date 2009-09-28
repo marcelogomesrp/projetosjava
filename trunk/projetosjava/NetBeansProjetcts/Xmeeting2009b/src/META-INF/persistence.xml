@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="Xmeeting2009bPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.usp.fmrp.entidades.TrabInstituicao</class>
+    <class>br.usp.fmrp.entidades.TrabAutor</class>
+    <class>br.usp.fmrp.entidades.Paper</class>
+    <class>br.usp.fmrp.entidades.TrabTopico</class>
+    <class>br.usp.fmrp.entidades.Trabalho</class>
+    <class>br.usp.fmrp.entidades.Member1</class>
+    <class>br.usp.fmrp.entidades.TrabGrupo</class>
+    <properties>
+      <!--servidor inicio -->
+      <!--
+      <property name="eclipselink.jdbc.password" value="lgmb2009"/>
+      <property name="eclipselink.jdbc.user" value="xmeeting"/>
+      <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost/xmeeting2009"/>
+      -->
+      <!--servidor fim -->
+      
+      <!-- local Inicio -->
+      <property name="eclipselink.jdbc.password" value="admin..."/>
+      <property name="eclipselink.jdbc.user" value="root"/>
+      <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost/xmeeting"/>
+      <!-- local fim -->
+    </properties>
+  </persistence-unit>
+</persistence>

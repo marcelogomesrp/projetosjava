@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="HelloWorld3PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>helloworld.Computador</class>
+<exclude-unlisted-classes>false</exclude-unlisted-classes>
+<properties>
+      <property name="eclipselink.jdbc.password" value="admin..."/>
+      <property name="eclipselink.jdbc.user" value="marcelo"/>
+      <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost/inventario"/>
+    </properties>
+  </persistence-unit>
+</persistence>

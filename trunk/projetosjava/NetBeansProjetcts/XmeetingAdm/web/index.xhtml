@@ -1,0 +1,28 @@
+<ui:composition template="/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich">
+    <ui:define name="body">
+        <h:form>
+            <rich:panel>
+                <f:facet name="header">
+                    <h:outputText value="Login" />
+                </f:facet>
+                <h:messages id="messages" />
+                <h:panelGrid columns="2" >
+                    <h:outputText value="Login" />
+                    <h:inputText id="loginInt" value="#{IndexManagedBean.login}" />
+                    <h:outputText value="Senha" />
+                    <h:inputSecret id="senhaInt" value="#{IndexManagedBean.senha}" />
+                    <h:commandLink value="Entrar" action="#{IndexManagedBean.DoLogin}" />
+
+                </h:panelGrid>
+            </rich:panel>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
+

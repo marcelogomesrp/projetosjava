@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich"
+                template="./../template/adminTemplate.xhtml">
+
+
+
+    <ui:define name="content">
+     <style  type="text/css">
+        .odd-row {
+            background-color: #ECF3FE;
+        }
+        .even-row {
+            background-color: #FCFFFE;
+        }
+        .active-row {
+            background-color: #FFEBDA;
+        }
+
+    </style>
+
+        <h:form>
+
+
+            <rich:panel>
+                <f:facet name="header">
+                    <h:outputText value="Papers inscritos" />
+                </f:facet>
+                <rich:dataTable  id="paperList" rows="#{PapersManagedBean.tamanhoLista}" value="#{PapersManagedBean.papers}" var="paper">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Status"/>
+                        </f:facet>
+                        <h:outputText value="#{paper.status}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="ID"/>
+                        </f:facet>
+                        <h:outputText value="#{paper.id}"/>
+                    </h:column>
+
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nome do arquivos"/>
+                        </f:facet>
+                        <h:outputText value="#{paper.filename}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Postado por"/>
+                        </f:facet>
+                        <h:outputText value="#{PapersManagedBean.postadoPor}"/>
+                    </h:column>
+                </rich:dataTable>
+            </rich:panel>
+
+
+            <rich:jQuery selector="#paperList tr:odd" query="addClass('odd-row')" />
+            <rich:jQuery selector="#paperList tr:even" query="addClass('even-row')" />
+            <rich:jQuery selector="#paperList tr" query="mouseover(function(){jQuery(this).addClass('active-row')})"/>
+            <rich:jQuery selector="#paperList tr" query="mouseout(function(){jQuery(this).removeClass('active-row')})"/>
+
+           
+
+
+        </h:form>
+    </ui:define>
+
+</ui:composition>
