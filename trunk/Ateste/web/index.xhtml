@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./newTemplate.xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.prime.com.tr/ui">
+
+
+    <ui:define name="cont" >
+
+        <h:form id="conteudo">
+
+            <p:ajaxStatus style="width:16px;height:16px;" id="ah">
+                <f:facet name="start">
+                    <h:outputText value="Carregando.." />
+                </f:facet>
+
+                <f:facet name="complete">
+                    <ui:include src="#{navegacaoMB.nome}" />
+                    <h:panelGrid columns="2" >
+                        <h:outputText value="Local" />
+                        <h:outputText value="#{navegacaoMB.nome}" />
+                    </h:panelGrid>
+                </f:facet>
+
+            </p:ajaxStatus>
+
+
+            <h:panelGrid columns="2" >
+
+                <p:commandButton value="Pessoa" action="#{navegacaoMB.Pessoa}" ajax="true" update="ah" />
+                <p:commandButton value="Grupo" action="#{navegacaoMB.Grupo}" ajax="true" update="ah" />
+            </h:panelGrid>
+
+
+
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>
